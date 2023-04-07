@@ -1,7 +1,5 @@
-# s23wb10marepally
-# link
-https://s23wb10marepally-pmqt.onrender.com/
-class van
-vancolor(string)
-vanmodel(string)
-vanprice(number)
+# s23db10marepally
+# github link
+https://github.com/03-eng/s23db10marepally
+# render link
+https://s23db10marepally.onrender.com
