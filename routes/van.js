@@ -7,3 +7,5 @@ router.get('/van/:id', van_controlers.van_detail)
 module.exports = router;
 /* GET detail van page */
 router.get('/detail', van_controlers.van_view_one_Page);
+/* GET create van page */
+router.get('/create', van_controlers.van_create_Page);
