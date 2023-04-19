@@ -9,3 +9,5 @@ module.exports = router;
 router.get('/detail', van_controlers.van_view_one_Page);
 /* GET create van page */
 router.get('/create', van_controlers.van_create_Page);
+/* GET create update page */
+router.get('/update', van_controlers.van_update_Page);
