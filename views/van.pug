@@ -21,13 +21,24 @@ block content
 
 block content
   h1= title
+  p 
+  - let start = `dispatch(\"/van/create\")`
+  p 
+    button.btn( class="btn-primary ml-1", onclick= start) Create
   -let items = results
   div(class="container-fluid")
    div(class="row m-1")
     each item in items
      - let destination = `dispatch(\"/van/update?id=${item._id}\")`
+     - let xy = `dispatch(\"/van/delete?id=${item._id}\")`
+     - let ab = `dispatch(\"/van/detail?id=${item._id}\")`
      div(class="row-sm-2", class="m-1") Item #{item.vancolor}(#{item.vanprice}) is #{item.vanmodel}
+     p
       button.btn( class="btn-primary ml-1", onclick= destination) Update
+     p
+      button.btn( class="btn-primary ml-1", onclick= xy) delete
+     p 
+      button.btn( class="btn-primary ml-1", onclick= ab) detail
 
   script.
    function dispatch(path){
